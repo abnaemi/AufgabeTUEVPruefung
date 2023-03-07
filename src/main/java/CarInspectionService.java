@@ -1,11 +1,9 @@
 public class CarInspectionService {
 
 
-  public boolean fourTiresChecker(Car car){
-         if (car.getNumberOfTires() == 4) {
-             return true;
-         }
-         return false;
+  public static boolean fourTiresChecker(Car car){
+         return car.getNumberOfTires() == 4;
+
   }
 
     public boolean seatBeltChecker(Car car){

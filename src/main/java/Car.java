@@ -1,9 +1,9 @@
 public class Car {
 
-    private int numberOfTires;
-    private int numberOfDoors;
-    private boolean seatBelt;
-    private boolean airbag;
+     int numberOfTires;
+     int numberOfDoors;
+     boolean seatBelt;
+     boolean airbag;
 
 
 
@@ -18,8 +18,13 @@ public class Car {
         this.airbag=airbag;
 
     }
+
+    public Car(int numberOfTires) {
+        this.numberOfTires =numberOfTires;
+    }
+
     public int getNumberOfTires() {
-        return numberOfDoors;
+        return numberOfTires;
     }
 
     public int setNumberofTires(int numberOfTires){
