@@ -8,7 +8,7 @@ public class Car {
 
 
     public Car (int numberOfTires) {
-
+    this.numberOfTires = numberOfTires;
     }
 
     public Car (int numberOfTires, int numberOfDoors, boolean seatBelt, boolean airbag) {
