@@ -2,9 +2,13 @@ public class Main {
 
     public static void main(String[] args) {
 
- Car carx= new Car (4);
-        System.out.println(carx.getNumberOfTires());
-        System.out.println(CarInspectionService.fourTiresChecker(carx));
+        Car carxx= new Car (4,4,true,true);
+        CarInspectionService tüv = new CarInspectionService();
+        carxx.setNumberOfTires(2);
+        System.out.println(carxx.getNumberOfTires());
+        System.out.println(tüv.fourTiresChecker(carxx));
+        System.out.println(tüv.seatBeltChecker(carxx));
+
 
     }
 }

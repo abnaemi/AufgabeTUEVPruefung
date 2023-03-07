@@ -1,34 +1,32 @@
 public class Car {
 
-     int numberOfTires;
-     int numberOfDoors;
-     boolean seatBelt;
-     boolean airbag;
+     private int numberOfTires;
+    private int numberOfDoors;
+    private boolean seatBelt;
+    private boolean airbag;
 
 
 
-    public Car () {
+    public Car (int numberOfTires) {
 
     }
 
     public Car (int numberOfTires, int numberOfDoors, boolean seatBelt, boolean airbag) {
-        this.numberOfDoors= numberOfTires;
-        this.numberOfDoors=numberOfDoors;
-        this.seatBelt=seatBelt;
-        this.airbag=airbag;
+        this.numberOfTires = numberOfTires;
+        this.numberOfDoors = numberOfDoors;
+        this.seatBelt = seatBelt;
+        this.airbag = airbag;
 
     }
 
-    public Car(int numberOfTires) {
-        this.numberOfTires =numberOfTires;
-    }
 
     public int getNumberOfTires() {
-        return numberOfTires;
+        return this.numberOfTires;
     }
 
-    public int setNumberofTires(int numberOfTires){
-        return this.numberOfDoors=numberOfTires;
+    public int setNumberOfTires(int numberOfTires){
+
+        return this.numberOfDoors = numberOfTires;
     }
 
 
@@ -36,7 +34,7 @@ public class Car {
         return numberOfDoors;
     }
 
-    public int setNumberofDoors(int numberOfDoors){
+    public int setNumberOfDoors(int numberOfDoors){
        return this.numberOfDoors=numberOfDoors;
     }
 
@@ -47,9 +45,7 @@ public class Car {
     }
 
     public boolean airBagExists(){
-        if (airbag = true)
-            return true;
-        return false;
+        return true;
     }
 
     @Override
