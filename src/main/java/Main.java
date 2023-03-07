@@ -8,6 +8,7 @@ public class Main {
         System.out.println(carxx.getNumberOfTires());
         System.out.println(tüv.fourTiresChecker(carxx));
         System.out.println(tüv.seatBeltChecker(carxx));
+        System.out.println(tüv.airBagChecker(carxx));
 
 
     }

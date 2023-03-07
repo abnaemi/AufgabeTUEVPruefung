@@ -7,14 +7,11 @@ public class CarInspectionService {
   }
 
     public boolean seatBeltChecker(Car car){
-        return car.airBagExists() == true;
+        return car.seatBealtExists() == true;
     }
 
     public boolean airBagChecker(Car car){
-      if (car.airBagExists()==true) {
-          return true;
-      }
-       return false;
+        return car.airBagExists() == true;
     }
 
     public boolean doorNumbersCorrectChecker (Car car){

@@ -39,13 +39,12 @@ public class Car {
     }
 
     public boolean seatBealtExists(){
-        if (seatBelt = true)
-            return true;
-        return false;
+        return seatBelt == true;
+
     }
 
     public boolean airBagExists(){
-        return true;
+        return airbag == true;
     }
 
     @Override
