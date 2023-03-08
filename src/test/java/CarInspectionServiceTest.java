@@ -11,15 +11,12 @@ class CarInspectionServiceTest {
 
         Car carExpected= new Car (4,4,true,true);
         CarInspectionService tüv = new CarInspectionService();
-        carExpected.setNumberOfTires(2);
 
 
         Car carActual= new Car (4,4,true,true);
-        CarInspectionService tüv2 = new CarInspectionService();
-        carActual.setNumberOfTires(2);
 
 
-        assertEquals(tüv.fourTiresChecker(carExpected),tüv2.fourTiresChecker(carActual));
+        assertEquals(tüv.fourTiresChecker(carExpected),tüv.fourTiresChecker(carActual));
 
     }
     @Test
@@ -27,15 +24,12 @@ class CarInspectionServiceTest {
 
         Car carExpected= new Car (4,4,true,true);
         CarInspectionService tüv = new CarInspectionService();
-        carExpected.setNumberOfTires(2);
 
 
-        Car carActual= new Car (1,4,true,true);
-        CarInspectionService tüv2 = new CarInspectionService();
-        carActual.setNumberOfTires(2);
+        Car carActual= new Car (3,4,true,true);
 
 
-        assertNotEquals(tüv.fourTiresChecker(carExpected),tüv2.fourTiresChecker(carActual));
+        assertNotEquals(tüv.fourTiresChecker(carExpected),tüv.fourTiresChecker(carActual));
 
     }
 
